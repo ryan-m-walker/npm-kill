@@ -1,0 +1,32 @@
+{
+  "name": "@username/npm-kill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node seed.js && node index.js test --ignore=\"my_folder, another\" ",
+    "styleLint:fix": "prettier-stylelint --write ./Content/**/*.scss"
+  },
+  "bin": {
+    "npm-kill": "./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.17.1",
+    "get-folder-size": "^2.0.0",
+    "node-emoji": "^1.8.1",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^9.5.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-rational-order": "0.0.2",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.3.0"
+  }
+}
