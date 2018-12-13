@@ -7,7 +7,7 @@ function rmrf(dir) {
   // get an array of all files in the current directory
   const files = fs.readdirSync(dir);
 
-  for (const file in files) {
+  for (const file of files) {
     const filePath = path.join(dir, file);
 
     if (fs.statSync(filePath).isDirectory()) {
